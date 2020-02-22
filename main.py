@@ -3,6 +3,8 @@
 
 __author__ = "My own previous work with JavaScript Katas 2"
 
+from tests.test_main import TestMain
+
 
 def add(x, y):
     return x + y
@@ -47,5 +49,8 @@ def fibonacci(n):
 
 
 if __name__ == '__main__':
-    # your code to call functions above
-    pass
+    TestMain.test_add(add)
+    TestMain.test_multiply(multiply)
+    TestMain.test_power(power)
+    TestMain.test_factorial(factorial)
+    TestMain.test_fibonacci(fibonacci)
