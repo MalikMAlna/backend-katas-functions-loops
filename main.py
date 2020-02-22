@@ -1,37 +1,49 @@
 #!/usr/bin/env python
 """Implements math functions without using operators except for '+' and '-' """
 
-__author__ = "???"
+__author__ = "My own previous work with JavaScript Katas 2"
 
 
 def add(x, y):
-    """Add two integers. Handles negative values."""
-    # your code here
-    return
+    return x + y
 
 
 def multiply(x, y):
-    """Multiply x with y. Handles negative values of x or y."""
-    # your code here
-    return
+    mult = 0
+    for counter in range(x):
+        mult = add(mult, y)
+    return mult
 
 
 def power(x, n):
-    """Raise x to power n, where n >= 0"""
-    # your code here
-    return
+    if n == 0:
+        return 1
+    else:
+        answer = x
+        increment = x
+        for num_1 in range(1, n, 1):
+            for num_2 in range(1, x, 1):
+                answer = multiply(answer, increment)
+        increment = answer
+    return answer
 
 
 def factorial(x):
-    """Compute factorial of x, where x > 0"""
-    # your code here
-    return
+    if x == 0 or x == 1:
+        return 1
+    else:
+        count = x - 1
+        while count:
+            x = multiply(x, count)
+            count -= 1
+        return x
 
 
 def fibonacci(n):
-    """Compute the nth term of fibonacci sequence"""
-    # your code here
-    return
+    arr = [0, 1]
+    for num in range(2, n+1):
+        arr.append(add(arr[num-2], arr[num-1]))
+    return arr[n-1]
 
 
 if __name__ == '__main__':
