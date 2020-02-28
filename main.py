@@ -3,6 +3,7 @@
 
 __author__ = """https://stackoverflow.com/questions/494594/
                 how-to-write-the-fibonacci-sequence#499245
+                old katas from Q1
                 and debugging help from Derek"""
 
 
