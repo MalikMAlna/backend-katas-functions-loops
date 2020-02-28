@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 """Implements math functions without using operators except for '+' and '-' """
 
-__author__ = "???"
+__author__ = """https://stackoverflow.com/questions/494594/
+                how-to-write-the-fibonacci-sequence#499245
+                and debugging help from Derek"""
 
 
 def add(x, y):
